@@ -10,6 +10,24 @@ function majority(age) {
     }
 }
 
+// For this kind of exercise, switch is not interesting. This is just for testing
+function majorityWithSwitch(age) {
+    let message; 
+    switch (age) {
+        case 17:
+            message = 'Vous êtes mineur !';
+            break;
+        case 18:
+        case 19:
+        case 20:
+            message = 'Vous êtes majeur en France !';
+            break;
+        
+        default:
+                message = 'Vous êtes majeur partout, a vous les casinos !';
+    }
+    return message;
+}
 function manageUserResponse(text) {
     
     let result = prompt(text);
@@ -22,4 +40,4 @@ function manageUserResponse(text) {
 
 let age = parseFloat(manageUserResponse('Quel est votre age ?'));
 
-alert('' + majority(age));
+alert('' + majorityWithSwitch(age));
