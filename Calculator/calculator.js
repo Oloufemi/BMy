@@ -66,3 +66,4 @@ let numberOfOperations = manageUserResponse('Combien d\'opérations souhaitez-vo
 for (let index = 0; index < numberOfOperations; index++) {
     calculatorMode();
 }
+}
