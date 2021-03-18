@@ -1,8 +1,13 @@
-let result = new Array(0);
+let result = [];
 
 function range(firstValue, secondValue) {
-    if (firstValue < secondValue) {
-        alert('La deuxième valeur doit être supérieure à la première');
+    console.log(result)
+    if (firstValue >= secondValue) {
+        return result;
+    } else {
+        result.push(firstValue++);
+        range(firstValue++, secondValue);
     }
-    
 }
+
+console.log(range(3,6).join('/'));
