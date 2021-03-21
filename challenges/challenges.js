@@ -30,10 +30,29 @@
  * Objects
  */
 
-let dog = {
-    race : 'german shepherd',
-    hair: 'short',
-    barking : () => {
-        console.log('waf waf');
-    }
+// let dog = {
+//     race : 'german shepherd',
+//     hair: 'short',
+//     barking : () => {
+//         console.log('waf waf');
+//     }
+// }
+
+/**
+ * Use REST parameter
+ */
+
+/**
+ * Calculate the sum of multiple values  
+ * @param  {...any} elements : many values
+ * @returns 
+ */
+function multipleAddition(...elements) {
+    let result = 0;
+    elements.forEach( element => {
+        result += element;
+    });
+    return result;
 }
+
+console.log(multipleAddition());
