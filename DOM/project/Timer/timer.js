@@ -29,3 +29,22 @@ button.addEventListener('mouseover', () => {
     button.style.cursor = 'pointer';
 })
 button.addEventListener('click',start);
+
+/** SPOILER */
+let btnSpoiler = document.querySelector('button.spoiler');
+let hidden = true;
+let p = document.createElement('p');
+
+function showOrHide() {
+    if (hidden) {
+        btnSpoiler.textContent = 'Hide';
+        p.textContent = 'The hidden message ! ';
+        document.body.append(p);
+    } else {
+        btnSpoiler.textContent = 'Show';
+        document.querySelector('p').remove();
+    }
+    hidden = !hidden;
+}
+
+btnSpoiler.addEventListener('click',showOrHide);
