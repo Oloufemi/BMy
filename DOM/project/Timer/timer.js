@@ -33,16 +33,16 @@ button.addEventListener('click',start);
 /** SPOILER */
 let btnSpoiler = document.querySelector('button.spoiler');
 let hidden = true;
-let p = document.createElement('p');
+let p = document.querySelector('p');
+p.textContent = 'The hidden text';
 
 function showOrHide() {
     if (hidden) {
-        btnSpoiler.textContent = 'Hide';
-        p.textContent = 'The hidden message ! ';
-        document.body.append(p);
-    } else {
         btnSpoiler.textContent = 'Show';
-        document.querySelector('p').remove();
+        p.style.display = 'none';
+    } else {
+        btnSpoiler.textContent = 'Hide';
+        p.style.display = 'flex';
     }
     hidden = !hidden;
 }
