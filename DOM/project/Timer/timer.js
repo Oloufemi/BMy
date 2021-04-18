@@ -32,6 +32,7 @@ button.addEventListener('click',start);
 
 /** SPOILER */
 let btnSpoiler = document.querySelector('button.spoiler');
+let btnStopSpoiler = document.querySelector('button.stopSpoiler');
 let hidden = true;
 let p = document.querySelector('p');
 p.textContent = 'The hidden text';
@@ -48,3 +49,9 @@ function showOrHide() {
 }
 
 btnSpoiler.addEventListener('click',showOrHide);
+
+/** STOP Spoiler */
+function stopSpoiler() {
+    btnSpoiler.removeEventListener('click', showOrHide);
+}
+btnStopSpoiler.addEventListener('click',stopSpoiler);
