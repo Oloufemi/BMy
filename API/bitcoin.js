@@ -41,3 +41,4 @@ function getBitcoinPrice() {
 setInterval(getBitcoinPrice, 20000);
 console.log('tttt');
 setInterval(getGoldPrice, 60000);
+console.log('tttt');
