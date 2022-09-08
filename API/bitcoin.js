@@ -17,6 +17,7 @@ function getGoldPrice() {
     if (request.readyState === XMLHttpRequest.DONE) {
       if (request.status === 200) {
         let response = request.response;
+        console.log('tttt');
         const goldPrice = (response.price / 1.22).toFixed(2);
         document.querySelector('#goldPrice').textContent = goldPrice;
       }
