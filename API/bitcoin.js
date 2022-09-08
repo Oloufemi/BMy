@@ -37,6 +37,7 @@ function getBitcoinPrice() {
     }
   };
 }
+console.log('tttt');
 
 setInterval(getBitcoinPrice, 20000);
 console.log('tttt');
