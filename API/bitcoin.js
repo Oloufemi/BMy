@@ -4,6 +4,8 @@ let urlGold = 'https://www.goldapi.io/api/';
 // Create our request
 let request = new XMLHttpRequest();
 
+console.log('tttt');
+
 function getGoldPrice() {
   console.log('gold');
   urlGold = `${urlGold}XAU/USD`;
